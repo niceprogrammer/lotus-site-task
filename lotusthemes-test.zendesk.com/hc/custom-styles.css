@@ -1,0 +1,115 @@
+.topbar {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: transparent;
+    -webkit-transition: all 250ms,background-color 500ms;
+    -moz-transition: all 250ms,background-color 500ms;
+    -o-transition: all 250ms,background-color 500ms;
+    transition: all 250ms,background-color 500ms;
+}
+.topbar.scrolled-down {
+    background-color: rgba(255,255,255,0.95);
+    position: fixed;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 0 rgba(0,0,0,0.1);
+}
+.topbar .gray-logo {
+    display: none;
+}
+.topbar.scrolled-down .gray-logo {
+    display: block;
+}
+.topbar.scrolled-down .white-logo {
+    display: none;
+}
+.topbar .login,
+.btn--topbar {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+.scrolled-down .login,
+.scrolled-down .btn--topbar {
+    color: #89888e;
+    border-color: #89888e;
+}
+.scrolled-down .login:hover,
+.scrolled-down .btn--topbar:hover {
+    color: #3EAE5F;
+    border-color: #3EAE5F;
+}
+
+.btn--default:hover {
+    color: #fff;
+    background-color: #008f6b;
+}
+
+.category-list-item__link{
+    background-color: #52B66F;
+}
+
+.category-list-item__link:hover {
+    background-color: #5dc57c;
+}
+
+.scroll-to-top {
+    border-color: #3EAE5F;
+}
+
+.scroll-to-top:hover {
+    background-color: #3EAE5F;
+    border-color: #3EAE5F;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.article-list-item__link,
+a {
+    color: #3EAE5F;
+}
+
+.footer {
+    background-color: #ebebed;
+    color: #89888e;
+}
+
+.lines,
+.lines:before,
+.lines:after {
+    background-color: #fff;
+}
+
+.ajax-news-item {
+    margin: 48px 0;
+}
+
+.ajax-news .js-load-news {
+    display: block;
+    margin: 0 0 48px 0;
+}
+
+.ajax-news-item h2 {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eceeef;
+}
+
+.scrolled-down .lines,
+.scrolled-down .lines:before,
+.scrolled-down .lines:after {
+    background-color: #89888e;
+}
+
+@media (max-width: 769px){
+    .intro-title {
+        visibility: hidden;
+    }
+}
+/*
+    Gray color for topbar - #89888e
+    Green color for topbar links - #3EAE5F
+    Button BG Color - #5dc57c
+    Button BG Hover color - #52B66F;
+*/
